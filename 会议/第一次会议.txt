@@ -1,0 +1,18 @@
+12306：前台加后台，买票，调度，检测 5
+
+1.订阅车票：usability，performance，availability, security, scalability
+internal: modifybility 嘉琛+孙康
+
+2.实时调度，人工干预：performance, safety, security, availability
+internal: testability, auditability, maintainability, 剩下三位童鞋
+
+3.soa提供社会服务：usability, interoperability, 王梦麟+周小帆
+
+
+医院：挂号，后勤资源调度，个人信息跟踪 5
+射中：病人：挂号，
+院长board：医院统计报表等
+后勤部门：采购管理资源
+医生：开药会诊，查看时间安排
+
+git：版本控制，远程构建，代码推荐，团队管理 3
