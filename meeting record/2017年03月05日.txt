@@ -1,0 +1,20 @@
+
+1.购票模块 旻晨
+Ticket Service实现查看余票、购票、车票改签、退票、为他人购票等功能
+Reliability，Interopreability
+
+
+2.列车时刻模块 王梦麟
+Train Schedule Service实现列车时刻表维护、列车正晚点信息维护的功能
+availability，Performance
+
+
+3.服务总线 嘉荣
+在服务的消费者和提供者中间起到路由选择的作用，
+可以实现防火墙、参数检测与统一、消费者请求分发、管理事务等功能。它的存在降低了服务消费者和提供者之间的耦合程度，提升了系统的可修改性
+security，Scalability
+
+
+4.数据持久
+
+
