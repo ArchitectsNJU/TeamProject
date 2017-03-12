@@ -6,18 +6,18 @@ import javax.ejb.Stateless;
  * Session Bean implementation class HelloWorldBean
  */
 @Stateless
-public class HelloWorldBean implements HelloWorld {
+public class ScheduleServerBean implements ScheduleServer {
 
     /**
      * Default constructor. 
      */
-    public HelloWorldBean() {
+    public ScheduleServerBean() {
         // TODO Auto-generated constructor stub
     }
 
-
-    public String SayHello(String name){
-    	return name+ ", Hello World.  Welcome to EJB3!";
-    }
+	@Override
+	public String findRoute(String routeId) {
+		return "This is the test result!";
+	}
 
 }

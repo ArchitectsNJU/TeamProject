@@ -14,8 +14,6 @@ public class EJBFactory {
 
 			jndiProps.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
 
-
-
 			final Context context = new InitialContext(jndiProps);
 			return context.lookup(jndipath);
 
