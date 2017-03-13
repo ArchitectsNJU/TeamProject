@@ -24,6 +24,7 @@ public class RequestBusHeartBeatChecker {
 	public static RequestBusHeartBeatChecker getInstance(){
 		if(instance==null){
 			synchronized (RequestBusHeartBeatChecker.class) {
+				if(instance==null)
 				instance=new RequestBusHeartBeatChecker();
 			}
 		}

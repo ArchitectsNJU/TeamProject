@@ -42,6 +42,7 @@ public class ScheduleBrokerRequestList implements RequestList{
 	public static ScheduleBrokerRequestList getInstance(){
 		if(instance==null){
 			synchronized(ScheduleBrokerRequestList.class){
+				if(instance==null)
 				instance=new ScheduleBrokerRequestList();
 			}
 		}

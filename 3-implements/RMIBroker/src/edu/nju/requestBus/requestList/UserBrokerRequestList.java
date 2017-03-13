@@ -42,6 +42,7 @@ public class UserBrokerRequestList implements RequestList{
 	public static UserBrokerRequestList  getInstance(){
 		if(instance==null){
 			synchronized(UserBrokerRequestList.class){
+				if(instance==null)
 				instance=new UserBrokerRequestList();
 			}
 		}
