@@ -1,11 +1,11 @@
-#â€”â€”â€”â€”IDEâ€”â€”â€”â€”
+#¡ª¡ª¡ª¡ªIDE¡ª¡ª¡ª¡ª
 *.iml
 .idea
 
-#â€”â€”â€”â€”MAC OSâ€”â€”â€”â€”
+#¡ª¡ª¡ª¡ªMAC OS¡ª¡ª¡ª¡ª
 *.DS_Store
 
-#â€”â€”â€”â€”Javaâ€”â€”â€”â€”
+#¡ª¡ª¡ª¡ªJava¡ª¡ª¡ª¡ª
 *.class
 *.classpath
 
@@ -20,7 +20,7 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-#â€”â€”â€”â€”Coberturaâ€”â€”â€”â€”
+#¡ª¡ª¡ª¡ªCobertura¡ª¡ª¡ª¡ª
 /target/*
 
-#â€”â€”â€”â€”Cache dataâ€”â€”â€”â€”
+#¡ª¡ª¡ª¡ªCache data¡ª¡ª¡ª¡ª
