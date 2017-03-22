@@ -1,0 +1,23 @@
+SOA更关注的是
+业务功能的复用，提高了可修改性
+通过定义良好的接口，提升互操作性
+接口与实现的分离，系统不依赖于平台
+
+这些，对于我们的系统，并不是很重要。
+
+broker
+隐藏了远程服务调用的实现细节
+运行时添加，移除sever，改变server位置
+适合分布式系统
+the broker is hosted at a well-known location
+活跃的服务器在broker上注册，所以下一次客户端请求这种服务，broker就可以使用了，
+performance and availability
+允许同时有很多server，且同时能服务很多客户端
+
+这个机制也叫做负载均衡
+
+soa是无状态的，broker可以做到在The broker must then make sure that all server calls that a client makes inside an atomic session are routed to the exact same server component.
+把交流有关的代码都从应用中分离，
+broker开发者不关心业务逻辑，应用开发者不关心 multicast protocols and TCP/IP routing.
+
+缺点：性能
