@@ -1,0 +1,39 @@
+整理一下 Broker 架构和 SOA 架构：
+
+相同的地方：
+1. 都需要一个消息中间件
+   - 在 Broker 中：broker
+   - 在 SOA 中：ESB
+2. 都适合异步和分布式应用
+
+不同的地方：
+- SOA 更看重可拓展性（服务之间的耦合低）
+  不好的地方是，一个服务的实现可能需要依赖其他服务，从而导致“性能不佳”
+
+- Broker 是事件驱动架构，性能会比较高
+  不好的地方是，可能带来 broker 的压力山大，但是可以通过集群来缓解
+ （第一次交作业的时候我还说可以通过注册broker的方式，但是你们似乎没有用）
+
+参考资料：
+关于架构的：
+http://colobu.com/2015/04/08/software-architecture-patterns/
+http://www.ruanyifeng.com/blog/2016/09/software-architecture.html
+
+关于消息中间件的：
+http://www.jiagoushuo.com/article/1000425.html
+
+总结，当初为什么选择 Broker 和 SOA？
+适合分布式：
+ - scalability 比较好，在十一黄金周和春运的情况下，可以扩容
+
+最后为什么放弃 SOA 选择 Broker？
+ - 我们的系统业务比较单一，且不容易变化，而 SOA 对扩展性灵活性要求高的系统更有价值
+ - 我们的核心 ASR 之一是性能
+   + SOA 的性能不佳
+   + 通过我们的精心设计，Broker 架构的 broker 有集群，解决了单点问题
+
+=========
+
+关于12306：
+
+https://www.zhihu.com/question/27321479
